@@ -44,7 +44,7 @@ export function calculateTax(income) {
         income=income-30_000;
         tax=income*20/100;
         return tax+20_00;
-    }
+    }  
     else if(income>=70_000){
         income=income-70_000;
         parseFloat(tax=income*30/100);
