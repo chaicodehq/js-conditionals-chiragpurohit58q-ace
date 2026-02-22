@@ -31,5 +31,131 @@
  * @returns {{ season: string, activity: string } | null}
  */
 export function getSeasonActivity(month, temperature) {
-  // Your code here
+  // Your1 code here
+  let season;
+  let activity;
+  if(month>12||month<=0){
+    return null;
+  }
+  switch(month){
+    case 12:
+      season="Winter"
+      if(temperature>=0){
+        activity="ice skating";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<0){
+        activity="skiing";
+        return {season:season,activity:activity}
+      }
+    case 1:
+      season="Winter"
+      if(temperature>=0){
+        activity="ice skating";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<0){
+        activity="skiing";
+        return {season:season,activity:activity}
+      }
+    case 2:
+      season="Winter"
+      if(temperature>=0){
+        activity="ice skating";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<0){
+        activity="skiing";
+        return {season:season,activity:activity}
+      }
+    case 3:
+      season="Spring"
+      if(temperature<=20){
+        activity="museum visit";
+         return {season:season,activity:activity}
+      }
+      else if(temperature>20){
+        activity="hiking"
+         return {season:season,activity:activity}
+      }
+    case 4:
+      season="Spring"
+      if(temperature<=20){
+        activity="museum visit";
+         return {season:season,activity:activity}
+      }
+      else if(temperature>20){
+        activity="hiking"
+         return {season:season,activity:activity}
+      }
+    case 5:
+      season="Spring"
+      if(temperature<=20){
+        activity="museum visit";
+         return {season:season,activity:activity}
+      }
+      else if(temperature>20){
+        activity="hiking"
+         return {season:season,activity:activity}
+      }
+    case 6:
+      season="Summer"
+      if(temperature>35){
+        activity="swimming";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<=35){
+        activity="cycling"
+        return {season:season,activity:activity}
+      }
+    case 7:
+      season="Summer"
+      if(temperature>35){
+        activity="swimming";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<=35){
+        activity="cycling"
+        return {season:season,activity:activity}
+      }
+    case 8:
+      season="Summer"
+      if(temperature>35){
+        activity="swimming";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<=35){
+        activity="cycling"
+        return {season:season,activity:activity}
+      }
+    case 9:
+      season="Autumn"
+      if(temperature>15){
+        activity="nature walk";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<=15){
+        activity="reading at a cafe";
+        return {season:season,activity:activity}
+      }
+    case 10:
+      season="Autumn"
+      if(temperature>15){
+        activity="nature walk";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<=15){
+        activity="reading at a cafe";
+        return {season:season,activity:activity}
+      }
+    case 11:
+      season="Autumn"
+      if(temperature>15){
+        activity="nature walk";
+        return {season:season,activity:activity}
+      }
+      else if(temperature<=15){
+        activity="reading at a cafe";
+        return {season:season,activity:activity}
+      }}
 }
