@@ -174,6 +174,9 @@ export function calculateCoffeePrice(size, type, extras = {}) {
         else if(extras.extraShot){
           return large+extraShots+mocha;
         }
+        else  if(extras.extraShot && extras.whippedCream){
+          return large+extraShots+mocha+whippedCreams;
+        }
         else{
           return large+mocha;  
         }
